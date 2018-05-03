@@ -8,7 +8,6 @@
 
     <title>main</title>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +27,7 @@
                   <header class="header">
                     <div class="container"> 
                       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
@@ -62,12 +61,12 @@
                   <!-- /.header -->
                 </div>
                 <div class="container">
-                  <div id='scene'>
+                  <div id='scene_general'>
                       <div data-depth="0.4" class="parallax_1">
-                        <img src="images/1_parallax.png" alt="">
+                        <img src="images/2_parallax.png" alt="">
                       </div>
                       <div data-depth="0.5" class="parallax_2">
-                        <img src="images/2_parallax.png" alt="">
+                        <img src="images/1_parallax.png" alt="">
                       </div>
                       <div data-depth="0.9" class="parallax_3">
                         <img src="images/3_parallax.png" alt="">
@@ -87,15 +86,19 @@
                   </div>
               		<div class="row">
               			<div class="col-md-12">
-              				<div class="col-sm-12">
-              					<img src="images/title.png" alt="title">
-              					<p>We provide flexible software platform for accepting payments all over the world. <br> Achieve better results. Launch your internet business fast and easy</p>
+              				<div class="col-sm-12 col-md-9 col-lg-5">
+                        <div class="first_word"><img src="images/Payment_text.svg" alt=""><img class='bg_text' src="images/Payment_BG_gradient.svg" alt=""></div>
+                        <div class="next_word"><img src="images/Power_text.svg" alt=""><img class='bg_text' src="images/Power_BG_gradient.svg" alt=""></div>
+                        <div class="third_word"><img src="images/Station_text.svg" alt=""><img class='bg_text' src="images/Station_BG_gradient.svg" alt=""></div> 
+              				</div>
+              				<div class="col-md-9 col-sm-12">
+              					<h2 class="p">We provide flexible software platform for accepting payments all over the world. Achieve better results. Launch your internet business fast and easy</h2>
               				</div>
               				<div class="col-md-12">
-              					<div class="col-lg-4 col-md-6 col-sm-6">
+              					<div class="col-lg-4 col-md-6 col-sm-6 ">
               						<a href="#" class="button">CREATE	ACCOUNT</a>
               					</div>
-              					<div class="col-lg-4 col-md-6 col-sm-6">
+              					<div class="col-lg-4 col-md-6 col-sm-6 ">
               						<a href="#" class="button purple">CONTACT SALES</a>
               					</div>
               				</div>
@@ -107,6 +110,32 @@
               	<div class="container">
                   <div class="radial_back"></div>
                   <div class="radial_back top"></div>
+                  <div id='scene_company'>
+                      <div data-depth="0.4" class="parallax_1">
+                        <img src="images/comet_2.png" alt="">
+                      </div>
+                      <div data-depth="0.5" class="parallax_2">
+                        <img src="images/comet_6.png" alt="">
+                      </div>
+                      <div data-depth="0.1" class="parallax_3">
+                        <img src="images/comet_1.png" alt="">
+                      </div>
+                      <div data-depth="0.2" class="parallax_4">
+                        <img src="images/comet_5.png" alt="">
+                      </div>
+                      <div data-depth="0.7" class="parallax_5">
+                        <img src="images/comet_8.png" alt="">
+                      </div>
+                      <div data-depth="0.1" class="parallax_6">
+                        <img src="images/6_parallax.png" alt="">
+                      </div>
+                      <div data-depth="1" class="parallax_7">
+                        <img src="images/comet_3.png" alt="">
+                      </div>
+                      <div data-depth="0.2" class="parallax_8">
+                        <img src="images/screen_2_ellipse.png" alt="">
+                      </div>
+                  </div>
               		<div class="row">
               			<div  class="col-md-6 col-md-push-6 description_block">
               				<h2>COMPANY</h2>
@@ -114,12 +143,14 @@
               				<a href="#">More about company  >> </a>
               			</div>
               			<div  class="col-md-6 col-md-pull-6 center_flex">
-              				<img  src="images/company.png" alt="">
+              				<div class="img_section company">
+              				<img  src="images/company.svg" alt="">
+              				</div>
               			</div>
               		</div>
               	</div>
               </section>
-              <section class="our-values_screen">
+              <div class="our-values_screen">
               <section class="misson_screen">
               	<div class="container">
               		<div class="row">
@@ -129,14 +160,30 @@
               				
               			</div>
               			<div class="col-md-6 center_flex">
-              				<img src="images/satellite.png" alt="">
+              				<div class="img_section satelite">
+              					<img src="images/satelite.svg" alt="">
+              					<img class="part" src="images/satelite_part.svg" alt="">
+              				</div>
               			</div>
               		</div>
               	</div>
               </section>
               <section class="goal_screen">
               	<div class="container">
-                 
+                 <div id='scene_goal'>
+                      <div data-depth="0.5" class="parallax_1">
+                        <img src="images/comet_2.png" alt="">
+                      </div>
+                      <div data-depth="0.9" class="parallax_2">
+                        <img src="images/comet_8.png" alt="">
+                      </div>
+                      <div data-depth="0.2" class="parallax_3">
+                        <img src="images/comet_1.png" alt="">
+                      </div>
+                      <div data-depth="0.1" class="parallax_4">
+                        <img src="images/8_parallax.png" alt="">
+                      </div>
+                  </div>
               		<div class="row">
               			<div class="col-md-6 col-md-push-6 description_block">
               				<h2>Our goal</h2>
@@ -144,7 +191,9 @@
               				
               			</div>
               			<div class="col-md-6 col-md-pull-6 center_flex">
-              				<img src="images/Saturn.png" alt="">
+              				<div class="img_section saturn">
+              					<img src="images/Saturn.svg" alt="">
+              				</div>
               			</div>
               		</div>
               	</div>
@@ -152,41 +201,143 @@
               <section class="values_screen">
               	<div class="container">
                    <div class="radial_back"></div>
+                    <div id='scene_value'>
+                      <div data-depth="0.3" class="parallax_1">
+                        <img src="images/8_parallax.png" alt="">
+                      </div>
+                      <div data-depth="0.8" class="parallax_2">
+                        <img src="images/9_parallax.png" alt="">
+                      </div>
+                  </div>
               		<div class="row">
               			<div class="col-md-6">
               				<h2>Our values</h2>
-              				<p>We believe that time is one of the key values of the modern world, that's why our technologies allow us to achieve greater results in less time. This is the second factor of our efficiency!</p>
+              				<p class="description_block">We believe that time is one of the key values of the modern world, that's why our technologies allow us to achieve greater results in less time. This is the second factor of our efficiency!</p>
               				
               			</div>
               			<div class="col-md-6 center_flex">
-              				<img src="images/rocket.png" alt="">
+              				<div class="img_section rocket">
+              					<img src="images/rocket.svg" alt="">
+              					<img class="fire" src="images/fire.svg" alt="">
+              				</div>
               			</div>
               		</div>
               	</div>
               </section>
-               </section>
+               </div>
               <section class="prev-end_screen">
               	<div class="container">
                   <div class="radial_back"></div>
+                  <div id='scene_prev-end'>
+                    <!-- square -->
+                      <div data-depth="0.4" class="parallax_1_1">
+                        <div><img src="images/square.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.4" class="parallax_1_2">
+                        <div><img src="images/square.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.4" class="parallax_1_3">
+                        <div><img src="images/square.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.4" class="parallax_1_4">
+                        <div><img src="images/square.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.4" class="parallax_1_5">
+                       <div><img src="images/square.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.4" class="parallax_1_6">
+                        <div><img src="images/square.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.4" class="parallax_1_7">
+                        <div><img src="images/square.png" alt=""></div>
+                      </div>
+                    <!-- square -->
+                    <!-- triangle -->
+                      <div data-depth="0.5" class="parallax_2_1">
+                        <div><img src="images/triangle.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.5" class="parallax_2_2">
+                        <div><img src="images/triangle.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.5" class="parallax_2_3">
+                        <div><img src="images/triangle.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.5" class="parallax_2_4">
+                        <div><img src="images/triangle.png" alt=""></div>
+                      </div>
+                    <!-- triangle -->  
+                    <!-- snake_big -->
+                      <div data-depth="0.1" class="parallax_3_1">
+                        <div><img src="images/snake_big.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.1" class="parallax_3_2">
+                        <div><img src="images/snake_big.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.1" class="parallax_3_3">
+                        <div><img src="images/snake_big.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.1" class="parallax_3_4">
+                        <div><img src="images/snake_big.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.1" class="parallax_3_5">
+                       <div><img src="images/snake_big.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.1" class="parallax_3_6">
+                        <div><img src="images/snake_big.png" alt=""></div>
+                      </div>
+                      <!-- snake_big -->
+                      <!-- snake -->
+                      <div data-depth="0.2" class="parallax_4_1">
+                        <div><img src="images/snake.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_4_2">
+                        <div><img src="images/snake.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_4_3">
+                        <div><img src="images/snake.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_4_4">
+                        <div><img src="images/snake.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_4_5">
+                        <div><img src="images/snake.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_4_6">
+                        <div><img src="images/snake.png" alt=""></div>
+                      </div>
+                       <!-- snake -->
+                        <!-- ring -->
+                      <div data-depth="0.2" class="parallax_5_1">
+                        <div><img src="images/ring.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_5_2">
+                        <div><img src="images/ring.png" alt=""></div>
+                      </div>
+                      <div data-depth="0.2" class="parallax_5_3">
+                        <div><img src="images/ring.png" alt=""></div>
+                      </div>
+                       <!-- ring -->
+                  </div>
+                
               		<div class="row">
-              			<div class="col-md-6">
+              			<div class="col-md-6 description_block">
               				<h3>Safely and Functionally</h3>
               				<p>Settlecard provides a set of online payment tools for for small, medium and large companies. We are the fully complian with the requirements of the PCI DSS Level 1 security standard for Payment Service Providers.</p>
               				
               			</div>
-              			<div class="col-md-6 text--right">
+              			<div class="col-md-6 text--right description_block">
               				<h3>Flexible Solutions</h3>
               				<p>Settlecard provides innovative, tailor-made payment solutions to high-risk merchants, guaranteeing the most advantageous terms and conditions to accept electronic payments. Our payment solutions feature flexible tariff schemes depending on your business turnover, multi currency payment processing, modern anti-fraud security guarantees.</p>
               				
               			</div>
-              			<div class="col-md-12">
+              			<div class="col-md-12 ship">
               				<img src="images/ship.png" alt="">
               			</div>
-              			<div class="col-md-6">
+              			<div class="col-md-6 description_block">
               				<h3>Supercharge your Profitability</h3>
               				<p>Our checkout features and payment options help you maximise conversions by identifying customers, pre-filling personal details and remembering payment preferences, as well as completing real-time credit assessments. </p>
               			</div>
-              			<div class="col-md-6 text--right">
+              			<div class="col-md-6 text--right description_block">
               				<h3>Safely and Functionally</h3>
               				<p>Settlecard provides a set of online payment tools for for small, medium and large companies. We are the fully complian with the requirements of the PCI DSS Level 1 security standard for Payment Service Providers </p>
               				
@@ -198,7 +349,7 @@
               	<div class="container">
               		<div class="row">
               			<div class="col-md-2">
-              				<img src="images/VR_Black.svg" alt="">
+              				<div class="vr_image"><img src="images/VR_Black.svg" alt=""></div>
               			</div>
               			<div class="col-md-8 text--center">
               				<h2>GROW YOU BUSINESS</h2>
@@ -206,7 +357,7 @@
               				<a href="#" class="button">LET’S START THE CONVERSATION</a>
               			</div>
               			<div class="col-md-2">
-              				<img src="images/Astronavt_Black.svg" alt="">
+              				<div class="astronavt"><img src="images/Astronavt_Black_Body.svg" alt=""></div> 
               			</div>
               		</div>
               	</div>
@@ -214,7 +365,9 @@
               <section class="footer-menu_screen">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-3">
+                  	<div class="col-md-6 col-sm-12">
+                  	<div class="row">
+                    <div class="col-md-6 col-sm-6 col-sm-push-2">
                       <h4>FEATURES</h4>
                       <ul>
                         <li><a href="#">Checkout</a></li>
@@ -223,7 +376,7 @@
                         <li><a href="#">Fraund protection</a></li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-sm-6 col-sm-push-2">
                       <h4>DEVELOPERS</h4>
                       <ul>
                         <li><a href="#">Documentation</a></li>
@@ -231,7 +384,11 @@
                         <li><a href="#">Sandbox</a></li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
+                    </div>
+                  </div>
+                    <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-6 col-sm-push-2">
                       <h4>COMPANY</h4>
                       <ul>
                         <li><a href="#">About us</a></li>
@@ -239,7 +396,7 @@
                         <li><a href="#">Blog</a></li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-sm-6 col-sm-push-2">
                       <h4>RESOURCES</h4>
                       <ul>
                         <li><a href="#">Support</a></li>
@@ -249,12 +406,14 @@
                     </div>
                   </div>
                 </div>
+                  </div>
+                </div>
               </section>
-              <section class="footer-partners_screen">
+              <div class="footer-partners_screen">
                 <div class="container">
                   <div class="row">
                      <div class="col-sm-12 text--center">
-                       <img src="images/visa-5.svg" class="footer_img_1" alt="">
+                       <img src="images/visa.svg" class="footer_img_1" alt="">
                        <img src="images/f-visa2.svg" class="footer_img_2" alt="">
                        <img src="images/f-master.svg" class="footer_img_3" alt="">
                        <img src="images/f-master2.svg" class="footer_img_4" alt="">
@@ -265,7 +424,7 @@
                      </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
 				</div>

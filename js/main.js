@@ -19,8 +19,8 @@ if($(window).width() >= '995'){
 		hoverOnly:true
 	});
 
-	var scene_prev_end = document.getElementById('scene_prev-end');
-	var parallaxInstance = new Parallax(scene_prev_end,{
-		hoverOnly:true
-	});
+	// var scene_prev_end = document.getElementById('scene_prev-end');
+	// var parallaxInstance = new Parallax(scene_prev_end,{
+	// 	hoverOnly:true
+	// });
 }

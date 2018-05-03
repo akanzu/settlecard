@@ -196,7 +196,7 @@ h3{
     color: #ffffff;
 }
 
-@keyframes different_changes{
+/*@keyframes different_changes{
   0%{
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0px, 0px);
   }
@@ -408,52 +408,52 @@ h3{
     transform:translate(0, 0);
   }
 
-}
-@media (min-width:992px){
+}*/
+/*@media sreen and (min-width:992px){
 
-.main_screen:hover .first_word img.bg_text{
+.main_screen .first_word img.bg_text{
    animation:translate_text_first 10s linear infinite;
 }
-.main_screen:hover .next_word img.bg_text{
+.main_screen .next_word img.bg_text{
    animation:translate_text_first 13s linear 1s infinite;
 }
-.main_screen:hover .third_word img.bg_text{
+.main_screen .third_word img.bg_text{
    animation:translate_text_first 30s linear infinite;
 }
-.main_screen:hover #scene_general img{  
+.main_screen #scene_general img{  
   animation:different_changes 10s ease-in-out infinite;
 }
-.our-values_screen:hover .misson_screen .img_section.satelite{
+.our-values_screen .misson_screen .img_section.satelite{
   animation:satelite 20s linear infinite;
 }
-.our-values_screen:hover .goal_screen .img_section.saturn{
+.our-values_screen .goal_screen .img_section.saturn{
   animation:levitation 30s linear infinite;
 }
-.our-values_screen:hover .values_screen .img_section.rocket{
+.our-values_screen .values_screen .img_section.rocket{
   animation:rocket 20s linear infinite;
 }
-.our-values_screen:hover .values_screen .img_section.rocket .fire{
+.our-values_screen .values_screen .img_section.rocket .fire{
   animation:rocket_fire 20s linear infinite;
 }
-.our-values_screen:hover .misson_screen img.part{
+.our-values_screen .misson_screen img.part{
   animation:satelite_part 10s linear infinite;
 }
-.our-values_screen:hover #scene_company img{  
+ #scene_company img{  
   animation: comet 3s cubic-bezier(0.42, 0.32, 0.68, 0.8) infinite;
 }
-.our-values_screen:hover #scene_goal img{  
+.our-values_screen #scene_goal img{  
   animation: comet 3s cubic-bezier(0.42, 0.32, 0.68, 0.8) infinite;
 }
-.our-values_screen:hover #scene_value img{  
+.our-values_screen #scene_value img{  
   animation:different_changes 10s ease-in-out infinite;
 }
-.prev-end_screen:hover #scene_prev-end > div:nth-child(2n) div{
+.prev-end_screen #scene_prev-end > div:nth-child(2n) div{
   animation:different_changes 15s ease-in-out  infinite;
 }
-.prev-end_screen:hover #scene_prev-end > div:nth-child(2n+1) div{
+.prev-end_screen #scene_prev-end > div:nth-child(2n+1) div{
   animation:different_changes 25s ease-in-out infinite;
 }
-.prev-end_screen:hover #scene_prev-end > div:nth-child(3n+2) div{
+.prev-end_screen #scene_prev-end > div:nth-child(3n+2) div{
   animation:different_changes 20s ease-in-out  infinite;
 }
  .astronavt{
@@ -470,7 +470,7 @@ h3{
 
   animation: astronavt 5s linear infinite;
 }
-}
+}*/
 
 .astronavt{
   position: relative;
@@ -522,10 +522,17 @@ h3{
 }
 .main_screen{
 	padding: 0 0 500px;
-  background: url(../images/big-bg.png) 80% 84% no-repeat;
+
   position: relative;
   z-index:1;
 }
+.main_screen .bg_screen{
+  position: absolute;
+  left: -184%;
+  top: -70%;
+  z-index: -1;
+}
+
 .main_screen p{
 	padding-left: 10px;
 }
@@ -583,10 +590,14 @@ h3{
   max-height: 450px;
 }
 .our-values_screen{
-	background: url(../images/big-bg.png) 82% 18% no-repeat;
   padding-top: 350px;
-  background-size: auto 100%;
  position: relative;
+}
+.our-values_screen .bg_screen{
+    position: absolute;
+    left: -184%;
+    top: 0%;
+    z-index: 0;
 }
 .img_section.satelite img{
   max-height: 350px;
@@ -611,11 +622,15 @@ h3{
   z-index: 3;
 }
 .goal_screen{
-    background: url(../images/goal_middle_bg.png) 64% -150px no-repeat;
     position: relative;
     z-index: 1;
     padding-top: 350px;
     margin-top: -350px; 
+}
+.goal_screen .bg_screen{
+    position: absolute;
+    top: -14%;
+    left: -194%;
 }
 .img_section.saturn img{
   max-height:350px;
@@ -627,13 +642,17 @@ h3{
         pointer-events: none;
 }
 .values_screen{
-  background: url(../images/goal_bottom_bg.png) 75% -250px no-repeat;
     position: relative;
     z-index: 1;
     padding: 350px 0;
     margin-top: -350px;
-    z-index: 1;
+
   }
+.values_screen .bg_screen{
+    position: absolute;
+    left: -134%;
+    top: -25%;
+}
 .img_section.rocket img{
   max-height: 300px;
 }
@@ -658,18 +677,31 @@ h3{
   padding:60px 0 180px 0;
 }
 .action_screen{
-    background: url(../images/footer_top_bg.png) 80% -3% no-repeat #250944;
-    margin-top: -32px;
-    padding-top: 337px;
+  margin-top: -32px;
+  padding-top: 337px;
+  position: relative;
+  z-index: -1;
+  background-color: #250944;
+}
+.action_screen .bg_screen{
+  position: absolute;
+  left: -184%;
+  top: 15%;
+  z-index: -1;  
 }
 .action_screen p{
 	font-size:24px;
 }
 .footer-menu_screen{
-background-color: #270d4b;
-    background: url(../images/footer_middle_bg.png) 39% 3% no-repeat #2c0955;
+    position: relative;
     margin-top: -32px;
     padding-top: 250px;
+}
+.footer-menu_screen .bg_screen{
+position: absolute;
+    left: -104%;
+    top: -15%;
+    z-index: -1; 
 }
 .footer-menu_screen li a{
   font-size: 14px;
@@ -685,8 +717,14 @@ background-color: #270d4b;
     padding-bottom: 10px;
 }
 .footer-partners_screen{
-background: url(../images/footer_bottom_bg.png) 61% 12% no-repeat #29054b;
     padding-top: 120px;
+    position:relative;
+}
+.footer-partners_screen .bg_screen{
+position: absolute;
+    left: -166%;
+    top: -125%;
+    z-index: -1;
 }
 .footer-partners_screen img{
   margin: 25px;
@@ -1094,7 +1132,7 @@ top: 39%;
 
 
 
-@media (min-width: 970px) and (max-width:1200px){
+@media sreen and (min-width: 970px) and (max-width:1200px){
 	.navbar-nav li a{
 		font-size: 13px;
 	}
@@ -1113,7 +1151,7 @@ top: 39%;
   }
 }
 
-@media (min-width: 768px) and (max-width:990px){
+@media sreen and  (min-width: 768px) and (max-width:990px){
 .navbar-toggle {
      display: block; 
 }
@@ -1125,7 +1163,7 @@ top: 39%;
      display: block!important;
 }
 }
-@media (min-width: 250px) and (max-width:992px){
+@media sreen and  (min-width: 250px) and (max-width:992px){
   p,span{
     font-size:18px;
   }
@@ -1314,7 +1352,7 @@ width: 230px;
     max-width: 100%;
 }
 }
-@media (min-width: 250px) and (max-width:768px){
+@media sreen and  (min-width: 250px) and (max-width:768px){
 .description_block{
       padding: 0px 10px;
 }
@@ -1335,4 +1373,13 @@ width: 230px;
     padding: 47px;
     left: -15px;
 }
+}
+#scene_general>div,
+#scene_company>div,
+#scene_goal>div,
+#scene_value>div,
+#scene_prev-end>div{
+  pointer-events: none;
+  position:absolute;
+      z-index: 0;
 }

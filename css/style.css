@@ -124,7 +124,7 @@ h3{
     display: inline-block;
     text-align: center;
     color: #ffffff;
-  transition: all 0.5s cubic-bezier(0.33, 0.32, 0.62, 1.26);
+  transition: all 0.25s cubic-bezier(0.33, 0.32, 0.62, 1.26);
 }
 .button.purple{
 	background-color:#7c24e5;
@@ -196,7 +196,7 @@ h3{
     color: #ffffff;
 }
 
-/*@keyframes different_changes{
+@keyframes different_changes{
   0%{
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0px, 0px);
   }
@@ -408,8 +408,8 @@ h3{
     transform:translate(0, 0);
   }
 
-}*/
-/*@media sreen and (min-width:992px){
+}
+@media screen  and (min-width:992px){
 
 .main_screen .first_word img.bg_text{
    animation:translate_text_first 10s linear infinite;
@@ -470,7 +470,7 @@ h3{
 
   animation: astronavt 5s linear infinite;
 }
-}*/
+}
 
 .astronavt{
   position: relative;
@@ -528,9 +528,10 @@ h3{
 }
 .main_screen .bg_screen{
   position: absolute;
-  left: -184%;
+left: -104%;
   top: -70%;
   z-index: -1;
+      pointer-events: none;
 }
 
 .main_screen p{
@@ -595,9 +596,10 @@ h3{
 }
 .our-values_screen .bg_screen{
     position: absolute;
-    left: -184%;
+    left: -104%;
     top: 0%;
     z-index: 0;
+        pointer-events: none;
 }
 .img_section.satelite img{
   max-height: 350px;
@@ -628,9 +630,11 @@ h3{
     margin-top: -350px; 
 }
 .goal_screen .bg_screen{
-    position: absolute;
-    top: -14%;
-    left: -194%;
+position: absolute;
+    left: -114%;
+    top: -15%;
+    z-index: -1;
+        pointer-events: none;
 }
 .img_section.saturn img{
   max-height:350px;
@@ -650,8 +654,9 @@ h3{
   }
 .values_screen .bg_screen{
     position: absolute;
-    left: -134%;
+    left: -75%;
     top: -25%;
+        pointer-events: none;
 }
 .img_section.rocket img{
   max-height: 300px;
@@ -674,34 +679,38 @@ h3{
     left: -17%;
 }
 .prev-end_screen .ship{
-  padding:60px 0 180px 0;
+    padding: 60px 10% 180px 0;
+    text-align: center;
 }
 .action_screen{
   margin-top: -32px;
   padding-top: 337px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background-color: #250944;
 }
 .action_screen .bg_screen{
   position: absolute;
-  left: -184%;
-  top: 15%;
-  z-index: -1;  
+    left: -110%;
+    top: 25%;
+    z-index: -1; 
+        pointer-events: none;
 }
 .action_screen p{
 	font-size:24px;
 }
 .footer-menu_screen{
     position: relative;
-    margin-top: -32px;
-    padding-top: 250px;
+    margin-top: -18px;
+    padding-top: 257px;
+    z-index: 1;
 }
 .footer-menu_screen .bg_screen{
-position: absolute;
-    left: -104%;
-    top: -15%;
-    z-index: -1; 
+    position: absolute;
+left: -93%;
+    top: -2%;
+      pointer-events: none;
+    z-index: -1;
 }
 .footer-menu_screen li a{
   font-size: 14px;
@@ -719,12 +728,17 @@ position: absolute;
 .footer-partners_screen{
     padding-top: 120px;
     position:relative;
+      z-index: 1;
 }
 .footer-partners_screen .bg_screen{
 position: absolute;
-    left: -166%;
+    left: -86%;
     top: -125%;
+        pointer-events: none;
     z-index: -1;
+}
+.footer-partners_screen .bg_screen img{
+    margin: 0;
 }
 .footer-partners_screen img{
   margin: 25px;
@@ -1132,7 +1146,7 @@ top: 39%;
 
 
 
-@media sreen and (min-width: 970px) and (max-width:1200px){
+@media screen  and (min-width: 970px) and (max-width:1200px){
 	.navbar-nav li a{
 		font-size: 13px;
 	}
@@ -1151,7 +1165,7 @@ top: 39%;
   }
 }
 
-@media sreen and  (min-width: 768px) and (max-width:990px){
+@media screen  and  (min-width: 768px) and (max-width:990px){
 .navbar-toggle {
      display: block; 
 }
@@ -1163,7 +1177,7 @@ top: 39%;
      display: block!important;
 }
 }
-@media sreen and  (min-width: 250px) and (max-width:992px){
+@media screen  and (min-width: 250px) and (max-width:992px){
   p,span{
     font-size:18px;
   }
@@ -1242,7 +1256,7 @@ margin: 0 0 50px 0;
 }
 .main_screen {
     padding: 0 0 500px;
-    background: url(../images/big-bg.png) 60% 64% no-repeat;
+
     position: relative;
     z-index: 1;
 }
@@ -1251,7 +1265,7 @@ margin: 0 0 50px 0;
     margin: 50px 0 0 0;
 }
 .our-values_screen {
-    background: url(../images/big-bg.png) 59% -190px no-repeat;
+
     padding-top: 220px;
     background-size: auto 100%;
     position: relative;
@@ -1265,7 +1279,7 @@ margin: 0 0 50px 0;
     position: relative;
 }
 .goal_screen {
-    background: url(../images/goal_middle_bg.png) 58% -143px no-repeat;
+
     position: relative;
     z-index: 1;
     padding-top: 350px;
@@ -1279,7 +1293,7 @@ margin: 0 0 50px 0;
     height: 300px;
 }
 .values_screen {
-    background: url(../images/goal_bottom_bg.png) 84% -157px no-repeat;
+
     position: relative;
     z-index: 1;
     padding: 400px 0;
@@ -1352,7 +1366,7 @@ width: 230px;
     max-width: 100%;
 }
 }
-@media sreen and  (min-width: 250px) and (max-width:768px){
+@media screen  and  (min-width: 250px) and (max-width:768px){
 .description_block{
       padding: 0px 10px;
 }
@@ -1373,13 +1387,4 @@ width: 230px;
     padding: 47px;
     left: -15px;
 }
-}
-#scene_general>div,
-#scene_company>div,
-#scene_goal>div,
-#scene_value>div,
-#scene_prev-end>div{
-  pointer-events: none;
-  position:absolute;
-      z-index: 0;
 }

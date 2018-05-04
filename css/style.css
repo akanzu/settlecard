@@ -676,8 +676,8 @@ left: -87rem;
 }
 .img_section.rocket .fire{
   position: absolute;
-top: 28%;
-    right: 13%;
+  top: 4rem;
+  right: 4rem;
   z-index: -1;
 }
 .prev-end_screen{

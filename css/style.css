@@ -558,10 +558,10 @@ padding:0 !important;
   animation:levitation 30s linear infinite;
 }
 .our-values_screen .values_screen .img_section.rocket{
-  animation:rocket 20s linear infinite;
+  animation:rocket 10s linear infinite;
 }
 .our-values_screen .values_screen .img_section.rocket .fire{
-  animation:rocket_fire 20s linear infinite;
+  animation:rocket_fire 10s linear infinite;
 }
 .our-values_screen .misson_screen img.part{
   animation:satelite_part 10s linear infinite;
@@ -789,7 +789,7 @@ padding:0 !important;
 }
 .values_screen .bg_screen{
   position: absolute;
-  left: -80rem;
+left: -87rem;
   top: -14rem;
   pointer-events: none;
 }
@@ -823,8 +823,8 @@ padding:0 !important;
   position: relative;
   z-index: 1;
   background-color: #250944;
-  padding-bottom: 900px;
-    margin-bottom: -900px;
+padding-bottom: 450px;
+    margin-bottom: -450px;
     overflow: hidden;
 }
 .action_screen .bg_screen{
@@ -1293,7 +1293,7 @@ padding:0 !important;
     left: -120rem;
   }
   .values_screen .bg_screen {
-    left: -56rem;
+    left: -64rem;
     top: -11rem;
   }  
   .action_screen .bg_screen {

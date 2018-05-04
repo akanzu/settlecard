@@ -323,158 +323,36 @@ padding:0 !important;
 }
 @keyframes rocket{
   0%{
-    transform:  translate(-60px, 60px);
+    transform:  translate(0px,0px);
   }
-  2%{
-    transform:  translate(-60px, 60px);
+  25%{
+    transform:  translate(-5px, -10px);
   }
-  20%{
-    transform:  translate(0, 0);
-  }
-  30%{
-    transform: translate(15px, -15px);
-  }
-  35%{
-    transform: translate(17px, -17px);
+  75%{
+    transform: translate(5px, 10px);
   }
   100%{
-    transform:  translate(-60px, 60px);
+    transform:  translate(0px, 0px);
   }
 }
 @keyframes rocket_fire{
   0%{
-    transform: scale(0);
-    top: 12%;
-    right: 6%;
-  }
-  5%{
-    transform: scale(1.2);
-  }
-  6%{
-    transform: scale(0.9);
-  }
-  8%{
-    transform: scale(1.1);
-  }
-  10%{
-    transform: scale(0.9);
-  }
-  12%{
-    transform: scale(1.1);
-  }
-  14%{
-    transform: scale(0.9);
-  }
-  16%{
-    transform: scale(1.1);
-  }
-  18%{
-    transform: scale(0.9);
+    transform: scale(1);
   }
   20%{
-    transform: scale(0.3);  
-  }
-  22%{
-    transform: scale(0.5);
-  }
-  24%{
-    transform: scale(0.6);  
-  }
-  26%{
-    transform: scale(0.5);
-  }
-  28%{
-    transform: scale(0.6);  
-  }
-  30%{
-    transform: scale(0.5);
-  }
-  32%{
-    transform: scale(0.6);  
-  }
-  34%{
-    transform: scale(0.5);
-  }
-  36%{
-    transform: scale(0.6);  
-  }
-  38%{
-    transform: scale(0.5);
+    transform: scale(1.2);
   }
   40%{
-    transform: scale(0.6);  
-  }
-  42%{
-    transform: scale(0.5);
-  }
-  44%{
-    transform: scale(0.6);  
-  }
-  46%{
-    transform: scale(0.5);
-  }
-  48%{
-    transform: scale(0.6);  
-  }
-  50%{
-    transform: scale(0.5);
-  }
-  52%{
-    transform: scale(0.6);  
-  }
-  54%{
-    transform: scale(0.5);
-  }
-  56%{
-    transform: scale(0.4);  
-  }
-  58%{
-    transform: scale(0.5);
+    transform: scale(0.9);
   }
   60%{
-    transform: scale(0.4);  
-  }
-  62%{
-    transform: scale(0.5);
-  }
-  64%{
-    transform: scale(0.4);  
-  }
-  66%{
-    transform: scale(0.5);
-  }
-  68%{
-    transform: scale(0.4);  
-  }
-  70%{
-    transform: scale(0.5);
-  }
-  72%{
-    transform: scale(0.4);  
-  }
-  74%{
-    transform: scale(0.5);
-  }
-  76%{
-    transform: scale(0.4);  
-  }
-  78%{
-    transform: scale(0.5);
+    transform: scale(1.1);
   }
   80%{
-    transform: scale(0.4);  
+    transform: scale(0.9);
   }
-  82%{
-    transform: scale(0.5);
-  }
-  84%{
-    transform: scale(0.4);  
-  }
-
   100%{
-    transform: scale(0);
-    top: 12%;
-    right: 6%;
+    transform: scale(1);
   }
 }
 @keyframes levitation{
@@ -561,7 +439,7 @@ padding:0 !important;
   animation:rocket 10s linear infinite;
 }
 .our-values_screen .values_screen .img_section.rocket .fire{
-  animation:rocket_fire 10s linear infinite;
+  animation:rocket_fire 2s linear infinite;
 }
 .our-values_screen .misson_screen img.part{
   animation:satelite_part 10s linear infinite;
@@ -798,8 +676,8 @@ left: -87rem;
 }
 .img_section.rocket .fire{
   position: absolute;
-  top: 39%;
-  right: 20%;
+top: 28%;
+    right: 13%;
   z-index: -1;
 }
 .prev-end_screen{

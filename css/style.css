@@ -543,12 +543,12 @@ padding:0 !important;
   pointer-events: none;
 }
 .main_screen .bg_wrapper{
-  position: absolute;
-  width: 98%;
-  height: 95%;
-  top: 2.7%;
-  left: 0.7%;
-  overflow: hidden;
+    position: absolute;
+    width: 97.8%;
+    height: 95%;
+    top: 2.7%;
+    left: 0.9%;
+    overflow: hidden;
 }
 .main_screen p{
 	padding-left: 10px;

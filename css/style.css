@@ -115,6 +115,13 @@ a:focus {
  color: #ffffff; 
  text-decoration: none;
 }
+a:hover{
+  color:#fd65fb;
+  text-decoration: none;
+}
+.footer-menu_screen a:hover{
+border-bottom: 1px solid #a973f3;
+}
 .padding_left_5{
   padding-left:5px;
 }
@@ -133,23 +140,30 @@ padding:0 !important;
   display: inline-block;
   text-align: center;
   color: #ffffff;
-  transition: all 0.25s cubic-bezier(0.33, 0.32, 0.62, 1.26);
+}
+.button:hover{
+ background: linear-gradient(#ff16a2 35%, #6c105c); 
 }
 .button.purple{
 	background-color:#7c24e5;
 }
+.button.purple:hover{
+   background: linear-gradient(#b900ff , #3fa2e9); 
+}
 .button:hover{
   color: #ffffff;
-  box-shadow: 0px 1px 11px 1px #c000bcbf;
   text-decoration: none;
 }
-.button.purple:hover{
+/*.button.purple:hover{
   box-shadow: 0px 1px 11px 1px #7c24e5;
-}
+}*/
 .header{
   padding-top: 0;
   position: relative;
   z-index: 1;
+}
+.navbar-nav a{
+
 }
 .navbar-toggle{
   margin-top: 40px;
@@ -175,6 +189,10 @@ padding:0 !important;
 .navbar-nav li.support-link a{
 	color:#6f5fff;
 }
+.navbar-nav li.support-link a:hover{
+  color:#9599ff;
+}
+
 .navbar-collapse{
 	padding: 0;
 }
@@ -205,8 +223,13 @@ padding:0 !important;
   display: inline-block;
   text-align: center;
   color: #ffffff;
+  transition:all 0.1s linear;
 }
+.signin-link a:hover{
+  box-shadow: 0 0 5px 1px #9b90fbad;
+  text-decoration: none;
 
+}
 @keyframes different_changes{
   0%{
     transform: /*rotateX(0deg) rotateY(0deg)*/ rotateZ(0deg) translate(0px, 0px);
@@ -498,13 +521,13 @@ padding:0 !important;
     transform:translate(0, 0);
   }
   20%{
-    transform:translate(-25%, -0%);
+    transform:translate(-20%, 0%);
   }
   40%{
     transform:translate(0%, 15%);
   }
   60%{
-    transform:translate(25%, 0%);
+    transform:translate(20%, 0%);
   }
   80%{
     transform:translate(0%, -15%);
@@ -743,7 +766,7 @@ padding:0 !important;
 }
 .goal_screen .bg_screen{
   position: absolute;
-  left: -128rem;
+  left: -137rem;
   top: -10rem;
   z-index: -1;
   pointer-events: none;
@@ -825,8 +848,8 @@ padding:0 !important;
 }
 .footer-menu_screen .bg_screen{
   position: absolute;
-  left: -112rem;
-  top: 0rem;
+    left: -72rem;
+    top: -5rem;
   pointer-events: none;
   z-index: -1;
 }
@@ -1267,7 +1290,7 @@ padding:0 !important;
     left: -100rem;
   }
   .goal_screen .bg_screen {
-    left: -113rem;
+    left: -120rem;
   }
   .values_screen .bg_screen {
     left: -56rem;
